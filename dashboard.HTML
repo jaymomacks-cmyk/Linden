@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Dashboard | Linden Assurance</title>
+  <meta name="description" content="Linden Assurance client dashboard.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell inner-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">LA</span>
+        <span>
+          <strong>Linden Assurance</strong>
+          <small>Binary AI determinations with audit-grade discipline</small>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="pricing.html">Pricing</a>
+        <button class="button button-secondary button-inline" id="signOutButton" type="button">Sign Out</button>
+      </nav>
+    </header>
+
+    <main class="page-main" id="dashboardShell">
+      <section class="page-hero">
+        <p class="eyebrow">Client Dashboard</p>
+        <h1 id="dashboardHeading">Welcome to Linden Assurance</h1>
+        <p class="lede" id="dashboardLead">
+          Your client dashboard is loading.
+        </p>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="card dashboard-card">
+          <p class="eyebrow">Profile</p>
+          <h2>Account Snapshot</h2>
+          <dl class="profile-list">
+            <div>
+              <dt>Name</dt>
+              <dd id="profileName">-</dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd id="profileEmail">-</dd>
+            </div>
+            <div>
+              <dt>Company</dt>
+              <dd id="profileCompany">-</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="card dashboard-card">
+          <p class="eyebrow">Audit Intake</p>
+          <h2>What you are evaluating</h2>
+          <p id="profileUseCase">
+            No system summary found.
+          </p>
+          <button class="button button-primary" id="dashboardAuditButton" type="button">Request Audit Review</button>
+          <p class="form-note" id="dashboardStatus" aria-live="polite"></p>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="card dashboard-card">
+          <p class="eyebrow">Roadmap</p>
+          <h2>Next portal upgrades</h2>
+          <ul>
+            <li>Secure authentication and password hashing</li>
+            <li>Database-backed client records and submissions</li>
+            <li>Audit job status, evidence uploads, and reports</li>
+          </ul>
+        </article>
+        <article class="card dashboard-card">
+          <p class="eyebrow">Current State</p>
+          <h2>MVP environment</h2>
+          <p>
+            This dashboard is a working browser-based prototype. It demonstrates the client journey and
+            session flow, but it is not yet a production portal.
+          </p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
