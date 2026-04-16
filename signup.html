@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | Linden Assurance</title>
+  <meta name="description" content="Create a Linden Assurance client account to request access and prepare for audits.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell inner-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">LA</span>
+        <span>
+          <strong>Linden Assurance</strong>
+          <small>Binary AI determinations with audit-grade discipline</small>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="founder.html">Founder</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="signin.html">Sign In</a>
+      </nav>
+    </header>
 
+    <main class="page-main">
+      <section class="page-hero">
+        <p class="eyebrow">Client Signup</p>
+        <h1>Create your Linden Assurance account</h1>
+        <p class="lede">
+          This MVP account flow stores information locally in your browser so you can test the client
+          experience before we connect a production auth system and backend.
+        </p>
+      </section>
+
+      <section class="auth-grid">
+        <form class="signup-card auth-card" id="createAccountForm">
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Your full name" required>
+          </label>
+          <label>
+            Company Email
+            <input type="email" name="email" placeholder="you@company.com" required>
+          </label>
+          <label>
+            Company / Team
+            <input type="text" name="company" placeholder="Organization name" required>
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="Create a password" minlength="8" required>
+          </label>
+          <label>
+            AI System Summary
+            <textarea name="use_case" rows="4" placeholder="Briefly describe the AI system or workflow you want audited." required></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Create Account</button>
+          <p class="form-note" id="createAccountStatus" aria-live="polite"></p>
+        </form>
+
+        <aside class="card auth-sidecard">
+          <p class="eyebrow">What Happens Next</p>
+          <h2>Your first private client space</h2>
+          <p>
+            Once the account is created, we route you to a dashboard shell where future audit intake,
+            status updates, and document delivery can live.
+          </p>
+          <ul>
+            <li>Local browser account persistence for MVP testing</li>
+            <li>Basic sign in and session state</li>
+            <li>Private dashboard placeholder for audit requests</li>
+          </ul>
+          <p class="auth-linkline">
+            Already have an account? <a href="signin.html">Sign in here</a>.
+          </p>
+        </aside>
+      </section>
+
+      <section class="disclaimer-panel">
+        <p class="eyebrow">Important Disclaimer</p>
+        <h2>This is a pre-production account flow.</h2>
+        <p>
+          Accounts created in this MVP are stored locally in the browser on the current device and are
+          not yet backed by a secure production authentication service, encrypted database, or formal
+          client portal. Do not use sensitive credentials, regulated data, or confidential client records
+          in this environment.
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
