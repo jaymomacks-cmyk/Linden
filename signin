@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In | Linden Assurance</title>
+  <meta name="description" content="Sign in to the Linden Assurance client portal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell inner-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">LA</span>
+        <span>
+          <strong>Linden Assurance</strong>
+          <small>Binary AI determinations with audit-grade discipline</small>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="founder.html">Founder</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="signup.html">Create Account</a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <p class="eyebrow">Client Sign In</p>
+        <h1>Access your Linden Assurance dashboard</h1>
+        <p class="lede">
+          Sign in with the account you created on this device to view your client dashboard shell.
+        </p>
+      </section>
+
+      <section class="auth-grid">
+        <form class="signup-card auth-card" id="signInForm">
+          <label>
+            Company Email
+            <input type="email" name="email" placeholder="you@company.com" required>
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="Your password" required>
+          </label>
+          <button class="button button-primary" type="submit">Sign In</button>
+          <p class="form-note" id="signInStatus" aria-live="polite"></p>
+        </form>
+
+        <aside class="card auth-sidecard">
+          <p class="eyebrow">Client Access</p>
+          <h2>No account yet?</h2>
+          <p>
+            Create one first to test the onboarding flow and unlock the dashboard experience.
+          </p>
+          <p class="auth-linkline">
+            <a href="signup.html">Create your account</a>
+          </p>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
